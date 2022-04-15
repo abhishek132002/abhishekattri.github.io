@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Registration Form</title>
+</head>
+
+  
+
+<body onreset="ifinvaliddata()">
+
+
+
+  <script> 
+    function ifinvaliddata(){
+      document.body.style.background= "orange";
+    }
+
+
+
+  </script>
+
+
+  <style> 
+      h1{background-color:green;text-align:center; padding:30px; }
+      body{background-color:lightblue;}
+      h5{color: brown;}
+      footer{background-color: black;text-align: center;padding: 50px;color:white; }
+
+      .center {
+           display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+}
+
+
+
+
+  </style>
+
+  <img src="https://thumbs.dreamstime.com/b/registration-hand-pressing-button-interface-blue-background-49410297.jpg" height="200" width="900" class="center">
+
+  <h1>New user can register them self by filling this Form </h1>
+
+  
+
+  <Form action="" method="post">
+
+  <fieldset> 
+
+    <legend>Registration Form </legend>
+
+    <lebel>First Name </lebel>
+    <input type="text" name="First name" required> <br> <br>
+
+    <lebel>Last Name </lebel>
+    <input type="text" name="Last name" required> <br> <br>
+
+    <lebel>User Name </lebel>
+    <input type="text" name="User name" required> <br> <br>
+
+    <lebel>Date of Birth </lebel>
+    <input type="date" name="Date of Birth" required> <br> <br>
+
+    <lebel for="Qualification">Qualification</lebel>
+    <select id="Qualification"> 
+
+      <option value="12th">12th </option>
+      <option value="Diploma">Diploma </option>
+      <option value="B.Tech">B.Tech </option>
+
+
+
+
+    </select><br> <br>
+
+
+    <lebel>Contact no.</lebel>
+    <input type="tel" name="Contact no." required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value=" format-123-456-7890" onivalid="ifinvaliddata()"> <br> <br>
+
+    <lebel>Gender:</lebel>
+    <input type="radio" name="Gender" value="male">Male 
+    <input type="radio" name="Gender" value="female">Female 
+    <input type="radio" name="Gender" value="other">other <br><br>
+
+    <lebel>Mail </lebel requried>
+    <input type="email" name="email"> <br> <br>
+
+    <lebel>Password </lebel>
+    <input type="password" name="password"> <br> <br>
+
+    <lebel>Address </lebel>
+    <textarea> </textarea><br> <br>
+
+    <lebel>File </lebel>
+    <input type="file" name="file" > <br> <br>
+
+    <lebel>Project URL </lebel>
+    <input type="url" name="url" > <br> <br>
+
+    <lebel>Country:</lebel>
+    <input type="checkbox" name="Country" value="Country">India <br> <br>
+
+    <lebel>Please Select your dress color</lebel>
+    <input type="color" name="dress color"> <br> <br>
+
+    <input type="reset" name="Reset" value="Reset">
+    <input type="submit" name="submit" value="Submit">
+
+
+
+
+
+
+
+
+  </fieldset> 
+
+
+
+  </Form>
+
+  <h5>Note:If you press reset button so you have to fill the form again an page color turn into orange </h5>
+ 
+  <footer>
+      <h3>About Me </h3>
+      <p>E-mail:<a href="abhisharma132002@gmail.com " target="_blank">abhisharma132002@gmail.com </a></p>
+      <p>Mobile no.:9306499409 </p>
+
+
+    </footer>
+
+</body>
+</html>
